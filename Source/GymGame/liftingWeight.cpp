@@ -26,6 +26,7 @@ void AliftingWeight::BeginPlay()
 {
 	Super::BeginPlay();
 	raiseStrength = false;
+    totalStrength = 0.0f;
 }
 
 // Called every frame
@@ -33,9 +34,45 @@ void AliftingWeight::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+    //framework to modify strength values, need object to change mass of to get good testing done
     if (raiseStrength == true) {
+        totalStrength += 0.1f;
         AWorldSettings* MyWorldSetting=GetWorldSettings();
-        MyWorldSetting->GlobalGravityZ = 1000.f;
+ 
+        if (totalStrength <= 1) {
+            MyWorldSetting->GlobalGravityZ = 1000.f;
+        }
+        else if (totalStrength <= 2) {
+            MyWorldSetting->GlobalGravityZ = 1000.f;
+        }
+        else if (totalStrength <= 3) {
+            MyWorldSetting->GlobalGravityZ = 1000.f;
+        }
+        else if (totalStrength <= 4) {
+            MyWorldSetting->GlobalGravityZ = 1000.f;
+        }
+        else if (totalStrength <= 5) {
+            MyWorldSetting->GlobalGravityZ = 1000.f;
+        }
+        else if (totalStrength <= 6) {
+            MyWorldSetting->GlobalGravityZ = 1000.f;
+        }
+        else if (totalStrength <= 7) {
+            MyWorldSetting->GlobalGravityZ = 1000.f;
+        }
+        else if (totalStrength <= 8) {
+            MyWorldSetting->GlobalGravityZ = 1000.f;
+        }
+        else if (totalStrength <= 9) {
+            MyWorldSetting->GlobalGravityZ = 1000.f;
+        }
+        else if (totalStrength <= 10) {
+            MyWorldSetting->GlobalGravityZ = 1000.f;
+        }
+        else {
+            MyWorldSetting->GlobalGravityZ = 1000.f;
+        }
+        raiseStrength = false;
     }
 
 }
