@@ -15,6 +15,7 @@ public:
 	// Sets default values for this actor's properties
 	AliftingWeight();
     bool raiseStrength;
+    float totalStrength;
 
     UPROPERTY(VisibleAnywhere)
     UStaticMeshComponent* VisualMesh;
