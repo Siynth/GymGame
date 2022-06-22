@@ -34,7 +34,7 @@ void AliftingWeight::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-    //framework to modify strength values, need object to change mass of to get good testing done
+    //framework to modify strength values, replace ifs below by modifying the mass of objects instead to create more fluid game environment
     if (raiseStrength == true) {
         totalStrength += 0.1f;
         AWorldSettings* MyWorldSetting=GetWorldSettings();
