@@ -25,7 +25,7 @@ AliftingWeight::AliftingWeight()
 void AliftingWeight::BeginPlay()
 {
 	Super::BeginPlay();
-	raiseStrength = false;
+	raiseStrength = true;
     totalStrength = 0.0f;
 }
 
